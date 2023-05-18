@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              src="/logoWide.svg"
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
@@ -114,5 +114,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
