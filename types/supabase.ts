@@ -4,56 +4,56 @@ export type Json =
   | boolean
   | null
   | { [key: string]: Json }
-  | Json[]
+  | Json[];
 
 export interface Database {
   public: {
     Tables: {
       countries: {
         Row: {
-          continent: Database["public"]["Enums"]["continents"] | null
-          id: number
-          iso2: string
-          iso3: string | null
-          local_name: string | null
-          name: string | null
-        }
+          continent: Database['public']['Enums']['continents'] | null;
+          id: number;
+          iso2: string;
+          iso3: string | null;
+          local_name: string | null;
+          name: string | null;
+        };
         Insert: {
-          continent?: Database["public"]["Enums"]["continents"] | null
-          id?: number
-          iso2: string
-          iso3?: string | null
-          local_name?: string | null
-          name?: string | null
-        }
+          continent?: Database['public']['Enums']['continents'] | null;
+          id?: number;
+          iso2: string;
+          iso3?: string | null;
+          local_name?: string | null;
+          name?: string | null;
+        };
         Update: {
-          continent?: Database["public"]["Enums"]["continents"] | null
-          id?: number
-          iso2?: string
-          iso3?: string | null
-          local_name?: string | null
-          name?: string | null
-        }
-      }
-    }
+          continent?: Database['public']['Enums']['continents'] | null;
+          id?: number;
+          iso2?: string;
+          iso3?: string | null;
+          local_name?: string | null;
+          name?: string | null;
+        };
+      };
+    };
     Views: {
-      [_ in never]: never
-    }
+      [_ in never]: never;
+    };
     Functions: {
-      [_ in never]: never
-    }
+      [_ in never]: never;
+    };
     Enums: {
       continents:
-        | "Africa"
-        | "Antarctica"
-        | "Asia"
-        | "Europe"
-        | "Oceania"
-        | "North America"
-        | "South America"
-    }
+        | 'Africa'
+        | 'Antarctica'
+        | 'Asia'
+        | 'Europe'
+        | 'Oceania'
+        | 'North America'
+        | 'South America';
+    };
     CompositeTypes: {
-      [_ in never]: never
-    }
-  }
+      [_ in never]: never;
+    };
+  };
 }
