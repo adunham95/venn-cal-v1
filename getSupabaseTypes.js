@@ -1,0 +1,1 @@
+console.log('NEXT_PUBLIC_SUPABASE_ID',process.env.NEXT_PUBLIC_SUPABASE_ID)
