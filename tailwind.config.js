@@ -10,9 +10,16 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: '#55b3f3',
-          Light: '#85c8f6',
-          Dark: '#259ef0',
+          light: '#85c8f6',
+          dark: '#259ef0',
         },
+        accent: {
+          DEFAULT: '#6356e5',
+          light: '#8c82ec',
+          dark: '#3a2ade',
+        },
+        light: '#f3f6f6',
+        dark: '#2a2a2a',
       },
     },
   },
